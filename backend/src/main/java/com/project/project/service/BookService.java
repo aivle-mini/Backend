@@ -39,12 +39,12 @@ public class BookService {
     }
 
     // 도서 삭제 yml
-    public void deleteBook(Long id) {
+    public BookDTO.Response deleteBook(Long id) {
         Book book = findVerifiredBook(id);
-//        if(book.getStatus() == Book.Status.BORROWED) {
-//            throw BaseException.type(BookErrorCode.CANNOT_DELETE_BORROWED_BOOK);
-//        }
-        bookRepository.delete(book); // 바꿔야됨
+        boolean deleted = Boolean.TRUE.equals(book.getIs_deleted());
+
+        book.setIs_deleted(!deleted); // 토글
+        return responseMapper.entityToResponse(book);
     }
 
     // 데이터 유무 검증 yml
@@ -52,7 +52,6 @@ public class BookService {
         return bookRepository.findById(id)
                 .orElseThrow(() -> BaseException.type(BookErrorCode.NOT_FOUND_BOOK));
     }
-
 
     //추가로직
     public Book createBook(BookDTO.Post dto) {
@@ -62,6 +61,7 @@ public class BookService {
         book.setUser(user);
         return bookRepository.save(book);
     }
+
     //수정로직
     public Book updateBook(Long id, BookDTO.Put dto) {
         Book book = bookRepository.findById(id)
