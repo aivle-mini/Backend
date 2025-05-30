@@ -27,8 +27,10 @@ public class Book {
     private String image_url;
 
     private Boolean is_deleted;
+
     @CreationTimestamp
     private LocalDateTime created_at;
+
     @UpdateTimestamp
     private LocalDateTime updated_at;
 

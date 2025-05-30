@@ -41,8 +41,8 @@ public class BookController {
 
     // 삭제 ymlee
     @DeleteMapping("/{bookId}")
-    public void deleteBook(@PathVariable("bookId") Long id) {
-        bookService.deleteBook(id);
+    public BookDTO.Response deleteBook(@PathVariable("bookId") Long id) {
+        return bookService.deleteBook(id);
     }
 
 }
