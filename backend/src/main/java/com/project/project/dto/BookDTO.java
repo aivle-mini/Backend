@@ -1,5 +1,6 @@
 package com.project.project.dto;
 
+import com.project.project.domain.User;
 import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -37,8 +38,10 @@ public class BookDTO {
     public static class Response {
         private Long id;
         private String title;
-        private String author;
-        private String publisher;
+        private String content;
+        private User user;
+        private String created_at;
+        private String updated_at;
     }
 
     // 도서 수정 (PUT)
