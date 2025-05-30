@@ -1,14 +1,13 @@
 package com.project.project.dto;
 
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import jakarta.validation.constraints.NotBlank;
 
-public class bookDTO {
+public class BookDTO {
     // 신규 도서 생성
     @Getter
     @Setter
@@ -25,7 +24,9 @@ public class bookDTO {
 
         @NotBlank()
         @NotNull
-        private String coverImageUrl;
+        private String image_url;
+
+        private Long userId;
     }
 
     // 조회(GET)
@@ -56,7 +57,7 @@ public class bookDTO {
 
         @NotBlank()
         @NotNull
-        private String coverImageUrl;
+        private String image_url;
     }
 
 
