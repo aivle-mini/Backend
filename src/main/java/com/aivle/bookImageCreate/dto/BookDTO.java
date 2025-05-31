@@ -30,8 +30,10 @@ public class BookDTO {
         private String title;
         private String content;
         private User user;
+        private String image_url;
         private String created_at;
         private String updated_at;
+        private Boolean is_deleted;
     }
 
     // 도서 수정 (PUT)

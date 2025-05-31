@@ -1,4 +1,4 @@
-package com.aivle.bookImageCreate.repository;
+package com.aivle.bookImageCreate.service;
 
 
 import com.aivle.bookImageCreate.domain.Book;

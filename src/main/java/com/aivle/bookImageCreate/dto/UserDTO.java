@@ -11,7 +11,7 @@ public class UserDTO {
     @Setter
     public static class Register {
         private String email;
-        private String password;
+        private String passwd;
         private String name;
     }
 
@@ -19,7 +19,7 @@ public class UserDTO {
     @Setter
     public static class Login {
         private String username;
-        private String password;
+        private String passwd;
     }
 
     @Getter

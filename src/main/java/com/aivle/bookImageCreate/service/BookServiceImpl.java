@@ -8,7 +8,7 @@ import com.aivle.bookImageCreate.exception.BookErrorCode;
 import com.aivle.bookImageCreate.mapper.BookControlMapper;
 import com.aivle.bookImageCreate.mapper.BookResponseMapper;
 import com.aivle.bookImageCreate.repository.BookRepository;
-import com.aivle.bookImageCreate.repository.BookService;
+import com.aivle.bookImageCreate.service.BookService;
 import com.aivle.bookImageCreate.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

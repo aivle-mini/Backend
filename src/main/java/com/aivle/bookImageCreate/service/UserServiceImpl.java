@@ -20,7 +20,7 @@ public class UserServiceImpl implements UserService {
     public UserDTO.Response register(UserDTO.Register dto) {
         User user = new User();
         user.setEmail(dto.getEmail());
-        user.setPasswd(dto.getPassword()); // 실 서비스에서는 BCrypt 해싱 적용 필요
+        user.setPasswd(dto.getPasswd()); // 실 서비스에서는 BCrypt 해싱 적용 필요
         user.setName(dto.getName());
         return toResponse(userRepository.save(user));
     }
@@ -29,7 +29,7 @@ public class UserServiceImpl implements UserService {
     public UserDTO.Response login(UserDTO.Login dto) {
         User user = userRepository.findByEmail(dto.getUsername())
                 .orElseThrow(() -> new IllegalArgumentException("사용자가 존재하지 않습니다."));
-        if (!user.getPasswd().equals(dto.getPassword())) {
+        if (!user.getPasswd().equals(dto.getPasswd())) {
             throw new IllegalArgumentException("비밀번호가 일치하지 않습니다.");
         }
         return toResponse(user);
