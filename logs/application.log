@@ -1,0 +1,31 @@
+2025-05-31T17:57:28.755+09:00  INFO 25272 --- [main] c.a.b.BookImageCreateApplication         : Starting BookImageCreateApplication using Java 17.0.15 with PID 25272 (C:\Users\UPZ\Desktop\study\aivle\mini\mini4\Backend\build\classes\java\main started by UPZ in C:\Users\UPZ\Desktop\study\aivle\mini\mini4\Backend)
+2025-05-31T17:57:28.758+09:00 DEBUG 25272 --- [main] c.a.b.BookImageCreateApplication         : Running with Spring Boot v3.5.0, Spring v6.2.7
+2025-05-31T17:57:28.759+09:00  INFO 25272 --- [main] c.a.b.BookImageCreateApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-05-31T17:57:29.233+09:00  INFO 25272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-31T17:57:29.281+09:00  INFO 25272 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2025-05-31T17:57:29.690+09:00  INFO 25272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-05-31T17:57:29.703+09:00  INFO 25272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-05-31T17:57:29.703+09:00  INFO 25272 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.41]
+2025-05-31T17:57:29.762+09:00  INFO 25272 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-05-31T17:57:29.762+09:00  INFO 25272 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 964 ms
+2025-05-31T17:57:29.899+09:00  INFO 25272 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-31T17:57:29.949+09:00  INFO 25272 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.15.Final
+2025-05-31T17:57:29.980+09:00  INFO 25272 --- [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-31T17:57:30.231+09:00  INFO 25272 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-31T17:57:30.258+09:00  INFO 25272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-31T17:57:30.472+09:00  INFO 25272 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:~/minidb user=SA
+2025-05-31T17:57:30.473+09:00  INFO 25272 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-31T17:57:30.522+09:00  INFO 25272 --- [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-31T17:57:31.432+09:00  INFO 25272 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-31T17:57:31.489+09:00  INFO 25272 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-31T17:57:31.769+09:00  WARN 25272 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-31T17:57:31.989+09:00  INFO 25272 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:~/minidb'
+2025-05-31T17:57:32.047+09:00  INFO 25272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-05-31T17:57:32.053+09:00  INFO 25272 --- [main] c.a.b.BookImageCreateApplication         : Started BookImageCreateApplication in 3.749 seconds (process running for 4.101)
