@@ -6,6 +6,8 @@
 - **Framework** : Springboot(3.5.0)
 - **Database** : H2
 
+# API 정의서
+![API정의서](https://github.com/user-attachments/assets/853a433e-b91a-4967-913f-746615003232)
 # 📌 세부 구현 사항
 ## domin
 ### Book
